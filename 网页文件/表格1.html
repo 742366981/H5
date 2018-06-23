@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表格1</title>
+<style type="text/css">
+table{margin-bottom:20px;}
+</style>
+</head>
+<body>
+<!--width="表格的宽" height="表格的高" border="表格的边框" bordercolor="边框色"
+cellspacing="单元格与单元格之间的距离" cellpadding="单元格与内容之间的空隙"
+align="表格对齐方式（取值：left\right\center）" valign="垂直对齐（取值：top\bottom\middle）"
+colspan="所要合并的单元格的列数" 
+rowspan="所要合并的单元格的行数"-->
+<table width="300" height="200" border="1" bordercolor="red" cellspacing="0">
+<tr>
+    <td align="left">姓名</td>
+	<td align="right">学号</td>
+	<td align="center">年龄</td>
+</tr>
+<tr>
+     <td valign="top">小明</td>
+     <td valign="bottom">201801</td>
+     <td valign="middle">21</td>
+</tr>
+<tr>
+     <td>小李</td>
+     <td>201802</td>
+     <td>22</td>
+</tr>
+<tr>
+     <td>小张</td>
+     <td>201803</td>
+	 <td>23</td>
+</tr>
+</table>
+<br />
+<table width="300" height="200" border="1" cellspacing="0">
+<tr>
+    <td colspan="2">1-1</td>
+	
+</tr>
+<tr>
+    <td>2-1</td>
+	<td>2-2</td>
+</tr>
+</table>
+<br />    
+<table width="300" height="200" border="1" cellspacing="0">
+<tr>
+    <td rowspan="2">1-1</td>
+	<td>1-2</td>
+</tr>
+<tr>
+
+	<td>2-2</td>
+</tr>
+</table>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>图片轮播</title>
+<style type="text/css">
+img{width:200px; height:300px;}
+</style>
+</head>
+<body>
+<div id="left" style="overflow:hidden;width:600px;">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+	<td id="left1" valign="top" align="center">
+	<table cellpadding="2" cellspacing="0" border="0">
+	<tr align="center">
+		<td><img src="电影封面/1.jpg"></td>
+		<td><img src="电影封面/2.jpg"></td>
+		<td><img src="电影封面/3.jpg"></td>
+		<td><img src="电影封面/4.jpg"></td>
+		<td><img src="电影封面/5.jpg"></td>
+	</tr>
+	</table>
+	</td>
+	<td id="left2" valign="top"></td>
+</tr>
+</table>
+</div>
+<script>
+var speed=5//速度数值越大速度越慢
+left2.innerHTML=left1.innerHTML
+function Marquee3(){
+if(left2.offsetWidth-left.scrollLeft<=0)
+left.scrollLeft-=left1.offsetWidth
+else{
+left.scrollLeft++
+}
+}
+var MyMar3=setInterval(Marquee3,speed)
+left.onmouseover=function() {clearInterval(MyMar3)}
+left.onmouseout=function() {MyMar3=setInterval(Marquee3,speed)}
+</script>
+</body>
+</html>

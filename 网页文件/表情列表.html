@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>表情列表</title> 
+<style type="text/css">
+*{margin:0; padding:0}
+#age1{margin-top:10px;}
+p{margin-bottom:10px;margin-top:10px;}
+.box1{width:600px;}
+ul{list-style:none;}
+.bq1{background:url(%E8%A1%A8%E6%83%85/doge.png) no-repeat left 50% ;padding-left:30px; float:left;}
+.bq2{background:url(%E8%A1%A8%E6%83%85/chuolian.png) no-repeat left 50% ;padding-left:30px; float:left; margin-left:16px;}
+.bq3{background:url(%E8%A1%A8%E6%83%85/tiaopi.png) no-repeat left 50% ;padding-left:30px; float:left; margin-left:16px;}
+</style>
+
+	
+</head>
+<body>
+<input id="age1" type="text" placeholder="请输入年龄"  />
+<input type="button" onClick="fn()" value="提交" />
+<p id="demo"></p>
+
+
+
+<script>
+function fn(){
+	
+	var age=age1.value
+	if(age>=18){demo.innerHTML="年龄达标";}
+	else if(age<18 && age>0){demo.innerHTML="年龄太小了";}
+	else{demo.innerHTML="输入不规范";}
+}
+</script>
+<div class="box1">
+<ul>
+	<li class="bq1">电影</li>
+    <li class="bq2">音乐</li>
+    <li class="bq3">新闻</li>
+
+</ul>
+</div>
+</body>
+</html>

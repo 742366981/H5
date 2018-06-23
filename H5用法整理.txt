@@ -1,0 +1,2 @@
+按钮连接到下一个页面：
+<input type="button" onclick="location.href='http://www.baidu.com'" value="下一页" />
