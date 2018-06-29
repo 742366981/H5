@@ -1,0 +1,11 @@
+初始页面比例为1，页面可自由缩放
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+初始页面比例为1，页面不可自由缩放
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+属性和值
+width	设置layout viewport的宽度，为一个正整数，或字符串"width-device"
+height	设置layout viewport的高度，这个属性对我们并不重要，很少使用
+initial-scale	设置页面的初始缩放值，为一个数字，可以带小数
+minimum-scale	允许用户的最小缩放值，为一个数字，可以带小数
+maximum-scale	允许用户的最大缩放值，为一个数字，可以带小数
+user-scalable	是否允许用户进行缩放，值为no或yes，no代表不允许，yes代表允许
